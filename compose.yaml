@@ -1,0 +1,49 @@
+name: odoo-csv-validator-v2
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: csv_validator
+      POSTGRES_PASSWORD: ${CSV_DB_PASSWORD:?Set CSV_DB_PASSWORD in .env}
+    volumes:
+      - csv-db:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U csv_validator -d postgres']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+  odoo:
+    image: odoo:18.0
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      HOST: db
+      USER: csv_validator
+      PASSWORD: ${CSV_DB_PASSWORD:?Set CSV_DB_PASSWORD in .env}
+    ports:
+      - '127.0.0.1:${CSV_ODOO_PORT:-8070}:8069'
+    volumes:
+      - ./addons:/mnt/extra-addons:ro
+      - ./docker/odoo.conf:/etc/odoo/odoo.conf:ro
+      - csv-odoo:/var/lib/odoo
+    restart: unless-stopped
+  test:
+    image: odoo:18.0
+    profiles: [test]
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      HOST: db
+      USER: csv_validator
+      PASSWORD: ${CSV_DB_PASSWORD:?Set CSV_DB_PASSWORD in .env}
+    volumes:
+      - ./addons:/mnt/extra-addons:ro
+      - ./docker/odoo.conf:/etc/odoo/odoo.conf:ro
+    command: [odoo, '-d', csv_validator_test, '--db-filter=^csv_validator_test$', '-i', odoo_csv_validator, '--test-enable', '--test-tags', /odoo_csv_validator, '--stop-after-init', '--no-http', '--without-demo=all']
+volumes:
+  csv-db:
+  csv-odoo:

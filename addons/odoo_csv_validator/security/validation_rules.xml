@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="csv_profile_owner_rule" model="ir.rule">
+        <field name="name">CSV profiles: own profiles only</field>
+        <field name="model_id" ref="model_csv_validation_profile"/>
+        <field name="domain_force">[('owner_id', '=', user.id)]</field>
+    </record>
+    <record id="csv_profile_rule_owner_rule" model="ir.rule">
+        <field name="name">CSV profiles: own column rules only</field>
+        <field name="model_id" ref="model_csv_validation_profile_rule"/>
+        <field name="domain_force">[('profile_id.owner_id', '=', user.id)]</field>
+    </record>
+    <record id="csv_wizard_owner_rule" model="ir.rule">
+        <field name="name">CSV validation: own uploads only</field>
+        <field name="model_id" ref="model_csv_validation_wizard"/>
+        <field name="domain_force">[('create_uid', '=', user.id)]</field>
+    </record>
+    <record id="csv_issue_owner_rule" model="ir.rule">
+        <field name="name">CSV validation: own issues and wizard only</field>
+        <field name="model_id" ref="model_csv_validation_issue"/>
+        <field name="domain_force">[('create_uid', '=', user.id), ('wizard_id.create_uid', '=', user.id)]</field>
+    </record>
+</odoo>

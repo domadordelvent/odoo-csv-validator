@@ -1,0 +1,857 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_csv_validator
+#
+msgid ""
+msgstr "Project-Id-Version: Odoo CSV Validator 18.0.2.2.0\nLanguage: ca\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "%(number)s — Unknown column"
+msgstr "%(number)s — Columna desconeguda"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "%(number)s — Unnamed column"
+msgstr "%(number)s — Columna sense nom"
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "1. Upload your file"
+msgstr "1. Carrega el fitxer"
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "2. Choose the format"
+msgstr "2. Tria el format"
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "3. Results"
+msgstr "3. Resultats"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "A profile can contain at most 100 column rules."
+msgstr "Un perfil pot contenir com a màxim 100 regles de columna."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/models/validation_profile.py:0
+msgid "A profile name cannot be blank."
+msgstr "El nom del perfil no pot estar buit."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid ""
+"Analysis is incomplete. The record count is partial; review the blocking "
+"issue."
+msgstr "L’anàlisi és incompleta. El recompte de registres és parcial; revisa la incidència que ha impedit continuar."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Analysis stopped. Limits: %(keys)s unique values across at most %(columns)s "
+"columns and %(memory)s MiB of estimated storage."
+msgstr "S’ha aturat l’anàlisi. Límits: %(keys)s valors únics en un màxim de %(columns)s columnes i %(memory)s MiB d’emmagatzematge estimat."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__blank_line_count
+msgid "Blank Line Count"
+msgstr "Línies buides"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+#: model:ir.actions.act_window,name:odoo_csv_validator.csv_validation_action
+#: model:ir.ui.menu,name:odoo_csv_validator.csv_validation_menu
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "CSV Validator"
+msgstr "CSV Validator"
+
+#. module: odoo_csv_validator
+#: model:res.groups,name:odoo_csv_validator.group_validation_profiles
+msgid "CSV Validator: Manage own validation profiles"
+msgstr "CSV Validator: gestiona els perfils de validació propis"
+
+#. module: odoo_csv_validator
+#: model:ir.model,name:odoo_csv_validator.model_csv_validation_profile_rule
+msgid "CSV column validation rule"
+msgstr "Regla de validació de columna CSV"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__file_data
+msgid "CSV file"
+msgstr "Fitxer CSV"
+
+#. module: odoo_csv_validator
+#: model:ir.model,name:odoo_csv_validator.model_csv_validation_wizard
+msgid "CSV structural validation"
+msgstr "Validació estructural de CSV"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "CSV validation"
+msgstr "Validació CSV"
+
+#. module: odoo_csv_validator
+#: model:ir.model,name:odoo_csv_validator.model_csv_validation_issue
+msgid "CSV validation issue"
+msgstr "Incidència de validació CSV"
+
+#. module: odoo_csv_validator
+#: model:ir.model,name:odoo_csv_validator.model_csv_validation_profile
+msgid "CSV validation profile"
+msgstr "Perfil de validació CSV"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "CSV validation: %s"
+msgstr "Validació CSV: %s"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__use_minimum
+msgid "Check minimum"
+msgstr "Comprova el mínim"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Check quotation marks. Each field must contain at most %(limit)s characters."
+msgstr "Comprova les cometes. Cada camp pot contenir com a màxim %(limit)s caràcters."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "Check your file structure before importing."
+msgstr "Comprova l’estructura del fitxer abans d’importar-lo."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Choose a CSV file first."
+msgstr "Tria primer un fitxer CSV."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Choose a point or comma as the decimal separator."
+msgstr "Tria un punt o una coma com a separador decimal."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Choose a smaller file."
+msgstr "Tria un fitxer més petit."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Choose a supported numeric format."
+msgstr "Tria un format numèric admès."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Choose integer or decimal before setting a minimum."
+msgstr "Tria enter o decimal abans de definir un mínim."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Choose text, integer or decimal as the column type."
+msgstr "Tria text, enter o decimal com a tipus de columna."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__code
+msgid "Code"
+msgstr "Codi"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__column_label
+msgid "Column"
+msgstr "Columna"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Column \"%(name)s\" appears more than once in the header."
+msgstr "La columna «%(name)s» apareix més d’una vegada a la capçalera."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__column_name
+msgid "Column header"
+msgstr "Capçalera de columna"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__column_name
+msgid "Column name"
+msgstr "Nom de columna"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Column not identified"
+msgstr "Columna no identificada"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__column
+msgid "Column number"
+msgstr "Número de columna"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__rule_ids
+msgid "Column rules"
+msgstr "Regles de columna"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_profile__decimal_separator__,
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__delimiter__,
+msgid "Comma (,)"
+msgstr "Coma (,)"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_issue__issue_type__content
+msgid "Content"
+msgstr "Contingut"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__create_uid
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__create_uid
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__create_uid
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__create_date
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__create_date
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__create_date
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__data_type
+msgid "Data Type"
+msgstr "Tipus de dada"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_profile_rule__data_type__decimal
+msgid "Decimal"
+msgstr "Decimal"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__decimal_separator
+msgid "Decimal Separator"
+msgstr "Separador decimal"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__delimiter
+msgid "Delimiter"
+msgstr "Separador de columnes"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__details_truncated
+msgid "Details Truncated"
+msgstr "Detall truncat"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__display_name
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__display_name
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__display_name
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__display_name
+msgid "Display Name"
+msgstr "Nom mostrat"
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "Download CSV report"
+msgstr "Descarrega l’informe CSV"
+
+#. module: odoo_csv_validator
+#: model:ir.model.constraint,message:odoo_csv_validator.constraint_csv_validation_profile_rule_profile_column_unique
+msgid "Each column can only be configured once per profile."
+msgstr "Cada columna només es pot configurar una vegada per perfil."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__encoding
+msgid "Encoding"
+msgstr "Codificació"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__end_line
+msgid "End Line"
+msgstr "Línia final"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/models/validation_profile.py:0
+msgid "Enter a minimum value."
+msgstr "Introdueix un valor mínim."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Enter a valid decimal minimum."
+msgstr "Introdueix un mínim decimal vàlid."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Enter a valid decimal number (use \"%(separator)s\" as the decimal "
+"separator)."
+msgstr "Introdueix un nombre decimal vàlid (utilitza «%(separator)s» com a separador decimal)."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Enter a valid minimum using a decimal point, without scientific notation or "
+"thousands separators."
+msgstr "Introdueix un mínim vàlid amb punt decimal, sense notació científica ni separadors de milers."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Enter a valid whole number."
+msgstr "Introdueix un nombre enter vàlid."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Enter a value of at least %(minimum)s."
+msgstr "Introdueix un valor igual o superior a %(minimum)s."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Enter a value."
+msgstr "Introdueix un valor."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__filename
+msgid "Filename"
+msgstr "Nom del fitxer"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__first_line
+msgid "First occurrence line"
+msgstr "Línia de la primera aparició"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Give this column a name."
+msgstr "Posa un nom a aquesta columna."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__header_snapshot
+msgid "Header Snapshot"
+msgstr "Còpia de la capçalera"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__id
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__id
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__id
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,help:odoo_csv_validator.field_csv_validation_profile_rule__minimum
+msgid "Inclusive exact decimal threshold, using a point; e.g. -2.50."
+msgstr "Llindar decimal exacte i inclusiu, amb punt; per exemple, -2.50."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__state__incomplete
+msgid "Incomplete analysis"
+msgstr "Anàlisi incompleta"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_profile_rule__data_type__integer
+msgid "Integer"
+msgstr "Enter"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__issue_ids
+msgid "Issue"
+msgstr "Incidència"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__issue_count
+msgid "Issue Count"
+msgstr "Incidències"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__issue_type
+msgid "Issue type"
+msgstr "Tipus d’incidència"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__state__errors
+msgid "Issues found"
+msgstr "Incidències detectades"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__write_uid
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__write_uid
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__write_uid
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Darrera actualització per"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__write_date
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__write_date
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__write_date
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__write_date
+msgid "Last Updated on"
+msgstr "Darrera actualització el"
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid ""
+"Line numbers refer to physical lines, including the header. Multiline "
+"records show their start and end lines. Results are temporary."
+msgstr "Els números de línia fan referència a les línies físiques, inclosa la capçalera. Els registres multilínia mostren la línia inicial i final. Els resultats són temporals."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.validation_profile_form
+msgid ""
+"Maximum 100 configured columns, including at most 20 unique columns. Numbers"
+" accept an optional sign; decimal values use the selected separator. "
+"Scientific notation and thousands separators are not supported. Maximum "
+"numeric length: 1,024 characters."
+msgstr "Màxim 100 columnes configurades, incloses com a màxim 20 columnes úniques. Els nombres admeten signe opcional; els decimals utilitzen el separador seleccionat. No s’admeten notació científica ni separadors de milers. Longitud numèrica màxima: 1.024 caràcters."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Maximum file size: 10 MiB."
+msgstr "Mida màxima del fitxer: 10 MiB."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__user_message
+msgid "Message"
+msgstr "Missatge"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__minimum
+msgid "Minimum (decimal point)"
+msgstr "Mínim (amb punt decimal)"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "Only internal users can validate CSV files."
+msgstr "Només els usuaris interns poden validar fitxers CSV."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Only the first %(limit)s data records were checked. The analysis is "
+"incomplete."
+msgstr "Només s’han comprovat els primers %(limit)s registres de dades. L’anàlisi és incompleta."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid ""
+"Only the first 1,000 issues are shown and exported. The total issue count "
+"includes all detected issues."
+msgstr "Només es mostren i s’exporten les primeres 1.000 incidències. El recompte total inclou totes les incidències detectades."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_issue__issue_type__other
+msgid "Other"
+msgstr "Altres"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__owner_id
+msgid "Owner"
+msgstr "Propietari"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_profile__decimal_separator___
+msgid "Point (.)"
+msgstr "Punt (.)"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__presentation_headers
+msgid "Presentation Headers"
+msgstr "Capçaleres per a la presentació"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Problem at byte offset %(offset)s (counting from zero). Choose the correct "
+"file encoding."
+msgstr "Problema a la posició de byte %(offset)s (comptant des de zero). Tria la codificació correcta del fitxer."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__profile_id
+msgid "Profile"
+msgstr "Perfil"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__profile_snapshot
+msgid "Profile Snapshot"
+msgstr "Còpia del perfil aplicat"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/models/validation_profile.py:0
+msgid "Profile ownership cannot be changed."
+msgstr "No es pot canviar el propietari d’un perfil."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__applied_profile_name
+msgid "Profile used for this result"
+msgstr "Perfil utilitzat per a aquest resultat"
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.validation_profile_form
+msgid ""
+"Profiles are private. Headers match after trimming spaces, with case "
+"preserved. Optional empty values are skipped. Uniqueness is case-sensitive; "
+"numeric uniqueness compares numeric values. Minimum values are inclusive and"
+" use a decimal point."
+msgstr "Els perfils són privats. Les capçaleres es comparen retallant espais i distingint majúscules i minúscules. S’ometen els valors buits opcionals. La unicitat distingeix majúscules i minúscules; en columnes numèriques compara els valors numèrics. Els mínims són inclusius i s’escriuen amb punt decimal."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/models/validation_profile.py:0
+msgid "Profiles must belong to the current user."
+msgstr "Els perfils han de pertànyer a l’usuari actual."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__state__draft
+msgid "Ready"
+msgstr "Preparat"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__record_count
+msgid "Record Count"
+msgstr "Registres"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__report_data
+msgid "Report Data"
+msgstr "Informe"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__report_filename
+msgid "Report Filename"
+msgstr "Nom del fitxer de l’informe"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__required
+msgid "Required value"
+msgstr "Valor obligatori"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__restriction_details
+msgid "Restrictions"
+msgstr "Restriccions"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__delimiter__;
+msgid "Semicolon (;)"
+msgstr "Punt i coma (;)"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__line
+msgid "Start line"
+msgstr "Línia inicial"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__state
+msgid "State"
+msgstr "Estat"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_issue__issue_type__structure
+msgid "Structure"
+msgstr "Estructura"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__delimiter__
+msgid "Tab"
+msgstr "Tabulador"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__message
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "Technical details"
+msgstr "Detalls tècnics"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_profile_rule__data_type__text
+msgid "Text"
+msgstr "Text"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The CSV could not be read."
+msgstr "No s’ha pogut llegir el CSV."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The CSV has no column named \"%(name)s\"."
+msgstr "El CSV no té cap columna amb el nom «%(name)s»."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "The CSV passes structural checks and the configured column rules."
+msgstr "El CSV supera les comprovacions estructurals i les regles de columna configurades."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid ""
+"The CSV structure is valid. Field values have not been checked against Odoo "
+"models."
+msgstr "L’estructura del CSV és vàlida. Els valors dels camps no s’han comprovat amb els models d’Odoo."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The file contains characters that cannot be read using %(encoding)s."
+msgstr "El fitxer conté caràcters que no es poden llegir amb %(encoding)s."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The file is empty. Add a header row."
+msgstr "El fitxer és buit. Afegeix-hi una fila de capçalera."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The file is too large. Maximum file size: 10 MiB."
+msgstr "El fitxer és massa gran. Mida màxima del fitxer: 10 MiB."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The first row must contain column names."
+msgstr "La primera fila ha de contenir els noms de columna."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The minimum cannot exceed 1,024 characters."
+msgstr "El mínim no pot superar els 1.024 caràcters."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The minimum must be finite; NaN and infinity are not accepted."
+msgstr "El mínim ha de ser finit; no s’accepten NaN ni infinit."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The record limit was reached."
+msgstr "S’ha arribat al límit de registres."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The uniqueness limit was reached."
+msgstr "S’ha arribat al límit de comprovació d’unicitat."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The upload could not be read. Upload the file again."
+msgstr "No s’ha pogut llegir el fitxer carregat. Torna’l a carregar."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "This column name repeats column %(column)s."
+msgstr "Aquest nom de columna repeteix el de la columna %(column)s."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "This value is already used on line %(line)s."
+msgstr "Aquest valor ja s’utilitza a la línia %(line)s."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile__trim_whitespace
+msgid "Trim spaces for comparison"
+msgstr "Retalla espais per comparar"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__encoding__utf-8-sig
+msgid "UTF-8 (with or without BOM)"
+msgstr "UTF-8 (amb BOM o sense)"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_profile_rule__unique
+msgid "Unique values"
+msgstr "Valors únics"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Uniqueness can be checked on at most 20 columns."
+msgstr "Es pot comprovar la unicitat en un màxim de 20 columnes."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid ""
+"Upload a CSV, choose its encoding and separator, then validate. Maximum: 10 "
+"MiB and 100,000 data records. The original file is never changed."
+msgstr "Carrega un CSV, tria la codificació i el separador i valida’l. Màxim: 10 MiB i 100.000 registres de dades. El fitxer original no es modifica."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Use a different, nonempty column name for each rule (maximum 256 "
+"characters)."
+msgstr "Utilitza un nom de columna diferent i no buit per a cada regla (màxim 256 caràcters)."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Use digits 0–9 with an optional + or - sign. Maximum %(limit)s characters. "
+"Decimal values, scientific notation and thousands separators are not "
+"accepted."
+msgstr "Utilitza dígits del 0 al 9 i, opcionalment, el signe + o -. Màxim %(limit)s caràcters. No s’accepten decimals, notació científica ni separadors de milers."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid ""
+"Use digits 0–9 with an optional + or - sign. Maximum %(limit)s characters. "
+"Scientific notation, thousands separators, NaN and infinity are not "
+"accepted."
+msgstr "Utilitza dígits del 0 al 9 i, opcionalment, el signe + o -. Màxim %(limit)s caràcters. No s’accepten notació científica, separadors de milers, NaN ni infinit."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__state__valid
+msgid "Valid structure"
+msgstr "Estructura vàlida"
+
+#. module: odoo_csv_validator
+#: model:ir.ui.menu,name:odoo_csv_validator.csv_validate_file_menu
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "Validate CSV"
+msgstr "Valida el CSV"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_wizard__profile_id
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.validation_profile_form
+msgid "Validation Profile"
+msgstr "Perfil de validació"
+
+#. module: odoo_csv_validator
+#: model:ir.actions.act_window,name:odoo_csv_validator.validation_profile_action
+#: model:ir.ui.menu,name:odoo_csv_validator.validation_profile_menu
+msgid "Validation Profiles"
+msgstr "Perfils de validació"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "Validation could not finish. Contact your administrator."
+msgstr "No s’ha pogut completar la validació. Contacta amb l’administrador."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "Validation issue"
+msgstr "Incidència de validació"
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.csv_validation_form
+msgid "Validation issues were found. Review the details below."
+msgstr "S’han detectat incidències de validació. Revisa els detalls següents."
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields.selection,name:odoo_csv_validator.selection__csv_validation_wizard__encoding__cp1252
+msgid "Windows-1252"
+msgstr "Windows-1252"
+
+#. module: odoo_csv_validator
+#: model:ir.model.fields,field_description:odoo_csv_validator.field_csv_validation_issue__wizard_id
+msgid "Wizard"
+msgstr "Assistent"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Wrong number of columns: %(actual)s instead of %(expected)s."
+msgstr "Nombre de columnes incorrecte: %(actual)s en lloc de %(expected)s."
+
+#. module: odoo_csv_validator
+#: model_terms:ir.ui.view,arch_db:odoo_csv_validator.validation_profile_form
+msgid "e.g. Contact list or monthly balances"
+msgstr "p. ex. Llista de contactes o saldos mensuals"
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The CSV exceeds 1,000 columns. Remove columns and try again."
+msgstr "El CSV supera les 1.000 columnes. Elimina columnes i torna-ho a provar."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The CSV header exceeds 64 KiB. Shorten the column names."
+msgstr "La capçalera del CSV supera els 64 KiB. Escurça els noms de les columnes."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "Validation results can only be changed by the validation process."
+msgstr "Només el procés de validació pot modificar els resultats."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "Validation result exceeds the allowed storage limits."
+msgstr "El resultat de la validació supera els límits d’emmagatzematge permesos."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "The CSV contains a NUL character. Remove NUL characters or check the file encoding."
+msgstr "El CSV conté un caràcter NUL. Elimina els caràcters NUL o comprova la codificació del fitxer."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/services/issue_presentation.py:0
+msgid "Problem at byte offset %(offset)s (counting from zero)."
+msgstr "Problema a la posició de byte %(offset)s (comptant des de zero)."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "Validation results cannot contain NUL characters."
+msgstr "Els resultats de la validació no poden contenir caràcters NUL."
+
+#. module: odoo_csv_validator
+#. odoo-python
+#: code:addons/odoo_csv_validator/wizard/csv_validation_wizard.py:0
+msgid "Validation results could not be saved. Contact your administrator."
+msgstr "No s’han pogut desar els resultats de la validació. Contacta amb l’administrador."

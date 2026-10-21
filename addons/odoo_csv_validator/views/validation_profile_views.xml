@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="validation_profile_list" model="ir.ui.view">
+        <field name="name">csv.validation.profile.list</field>
+        <field name="model">csv.validation.profile</field>
+        <field name="arch" type="xml">
+            <list><field name="name"/><field name="decimal_separator"/><field name="trim_whitespace"/></list>
+        </field>
+    </record>
+    <record id="validation_profile_form" model="ir.ui.view">
+        <field name="name">csv.validation.profile.form</field>
+        <field name="model">csv.validation.profile</field>
+        <field name="arch" type="xml">
+            <form string="Validation Profile">
+                <sheet>
+                    <div class="oe_title"><label for="name"/><h1><field name="name" placeholder="e.g. Contact list or monthly balances"/></h1></div>
+                    <group><field name="owner_id"/><field name="trim_whitespace"/><field name="decimal_separator"/></group>
+                    <div class="alert alert-info" role="alert">Profiles are private. Headers match after trimming spaces, with case preserved. Optional empty values are skipped. Uniqueness is case-sensitive; numeric uniqueness compares numeric values. Minimum values are inclusive and use a decimal point.</div>
+                    <field name="rule_ids">
+                        <list editable="bottom">
+                            <field name="column_name"/>
+                            <field name="required"/><field name="unique"/>
+                            <field name="data_type"/>
+                            <field name="use_minimum" readonly="data_type == 'text'"/>
+                            <field name="minimum" readonly="not use_minimum" required="use_minimum"/>
+                        </list>
+                    </field>
+                    <p class="text-muted">Maximum 100 configured columns, including at most 20 unique columns. Numbers accept an optional sign; decimal values use the selected separator. Scientific notation and thousands separators are not supported. Maximum numeric length: 1,024 characters.</p>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="validation_profile_action" model="ir.actions.act_window">
+        <field name="name">Validation Profiles</field>
+        <field name="res_model">csv.validation.profile</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="validation_profile_menu" name="Validation Profiles" parent="csv_validation_menu" action="validation_profile_action" groups="odoo_csv_validator.group_validation_profiles" sequence="20"/>
+</odoo>

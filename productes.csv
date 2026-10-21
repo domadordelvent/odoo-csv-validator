@@ -1,0 +1,6 @@
+product_name,internal_reference,tags,sales_price,cost,on_hand
+Office Lamp,FURN_0002,Furniture;Office;Lighting,45.00,30.00,10
+Desk Chair,FURN_0003,Furniture;Office,120.00,80.00,5
+Bad Product,,Furniture,20.00,10.00,3
+Cheap Table,FURN_9999,Furniture;Office,40.00,75.00,2
+Wrong Stock,FURN_0002,Furniture,30.00,20.00,abc

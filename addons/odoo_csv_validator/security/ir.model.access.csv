@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_csv_validation_wizard,csv.validation.wizard,model_csv_validation_wizard,base.group_user,1,1,1,1
+access_csv_validation_issue,csv.validation.issue,model_csv_validation_issue,base.group_user,1,1,1,1
+access_csv_validation_profile,csv.validation.profile,model_csv_validation_profile,odoo_csv_validator.group_validation_profiles,1,1,1,1
+access_csv_validation_profile_rule,csv.validation.profile.rule,model_csv_validation_profile_rule,odoo_csv_validator.group_validation_profiles,1,1,1,1
