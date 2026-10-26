@@ -4,6 +4,28 @@ Version **18.0.2.2.0** for **Odoo 18 Community**. Validate CSV structure and opt
 
 Licensed under **GNU LGPL version 3 (LGPL-3.0-only)**. See [LICENSE](LICENSE) and the incorporated GPL terms in [COPYING](COPYING). Both texts are also included inside the addon for standalone distribution.
 
+## Demo
+
+[![Watch the Odoo CSV Validator demo on YouTube](https://img.youtube.com/vi/mF-xWQ5Pu58/hqdefault.jpg)](https://youtu.be/mF-xWQ5Pu58)
+
+The video opens with a previously configured validation profile. A CSV file is then uploaded and validated against that profile's rules, showing the detected errors and validation results. The original file is neither modified nor imported into Odoo.
+
+The screenshots below use synthetic demonstration data in Odoo 18 Community.
+
+**Validation profile and column rules**
+
+![Validation profile with required, unique, integer, decimal and minimum rules](docs/media/02-rules.png)
+
+**Successful validation: five records, no issues**
+
+![Five demo records pass the configured profile rules](docs/media/04-valid.png)
+
+**Error report: six records, six issues**
+
+![Detected errors with physical line numbers and readable messages](docs/media/03-errors.png)
+
+[Download the generated demo error report](docs/media/demo-errors-report.csv).
+
 ## Features
 
 - Explicit UTF-8 (with or without BOM) or Windows-1252, and comma, semicolon or tab separator.

@@ -1,0 +1,8 @@
+﻿code,start_line,end_line,column,message,column_name,issue_type,restrictions,technical_message,first_occurrence_line
+DUPLICATE_VALUE,3,3,1,This value is already used on line 2.,reference,content,,Value duplicates the record starting at line 2.,2
+BELOW_MINIMUM,4,4,3,Enter a value of at least 0.,quantity,content,,Value must be greater than or equal to 0.,
+REQUIRED,5,5,1,Enter a value.,reference,content,,A value is required.,
+INVALID_NUMBER,6,6,3,Enter a valid whole number.,quantity,content,"Use digits 0–9 with an optional + or - sign. Maximum 1,024 characters. Decimal values, scientific notation and thousands separators are not accepted.",Expected an integer (optional sign and digits only).,
+REQUIRED,7,7,2,Enter a value.,name,content,,A value is required.,
+BELOW_MINIMUM,7,7,4,Enter a value of at least 0.,unit_price,content,,Value must be greater than or equal to 0.,
+SUMMARY,,,,records=6; blank_lines=0; issues=6; complete=True; details_truncated=False,,,,,
